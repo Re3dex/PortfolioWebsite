@@ -1,0 +1,185 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  color: #fff;
+  background-image: url('background.jpg'); /* Path to your background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Sidebar Styles */
+#sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 58, 64, 1); /* Transparent background for sidebar */
+  padding-top: 20px;
+  overflow-y: auto;
+}
+  
+  #sidebar .sidebar-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #sidebar .sidebar-header h3 {
+    color: #fff;
+  }
+  
+  #sidebar .sidebar-header img {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  #sidebar ul.components {
+    padding: 20px 0;
+  }
+  
+  #sidebar ul.components li {
+    margin-bottom: 10px;
+  }
+  
+  #sidebar ul.components li a {
+    padding: 10px 15px;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #sidebar ul.components li a:hover {
+    background-color: #495057;
+  }
+  
+  #sidebar ul.components li.active a {
+    background-color: #007bff;
+  }
+  
+  /* Sidebar Styles */
+#sidebar {
+  height: 100%;
+  width: 250px; /* Default width */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 58, 64, 1); /* Transparent background for sidebar */
+  padding-top: 20px;
+  overflow-y: auto;
+}
+
+/* Add responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  #sidebar {
+    width: 180px; /* Adjust width for smaller screens */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #sidebar {
+    width: 120px; /* Adjust width for even smaller screens */
+  }
+}
+
+
+/* Content Styles */
+#content {
+  padding: 20px;
+  /* Adjust margin to accommodate the sidebar width */
+  margin-left: 250px; /* Default value */
+}
+
+/* Add responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  #content {
+    margin-left: 130px; /* Adjust margin for smaller screens */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #content {
+    margin-left: 100px; /* Adjust margin for even smaller screens */
+  }
+}
+  
+  /* Page Styles */
+  .page {
+    background-color: #343A40;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .page h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #007bff;
+  }
+  
+  /* Project Styles */
+  .project {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .project h3 {
+    margin-top: 0;
+  }
+  
+  /* Form Styles */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+  }
+  
+  .form-control {
+    width: calc(100% - 20px); /* Adjust width to accommodate padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  #cv-pdf {
+    height: 100vh;
+    width: 100%;
+  }
+
+  /* Hide the CV on screens smaller than 768px (typical mobile devices) */
+  @media only screen and (max-width: 768px) {
+    #cv-pdf {
+      display: none;
+    }
+}
+  #cv-link{
+    color: blue;
+  }
+.social-buttons{
+  padding-left: 10px;
+}
+
+
+  .social-buttons a img {
+    width: 21px; /* Limit the width to 21 pixels */
+    height: 21px; /* Limit the height to 21 pixels */
+  }
